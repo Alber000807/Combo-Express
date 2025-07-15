@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combo Express</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      background: #ff8243;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .producto {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: calc(50% - 1rem);
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+    .promociones {
+      background: #fff2e5;
+      border-left: 4px solid #ff8243;
+      padding: 1rem;
+      margin: 2rem 0;
+    }
+    .whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .producto {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>COMBO EXPRESS</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#nosotros">Sobre nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Todo lo que necesitas, en un solo combo</h2>
+  </section>
+
+  <section class="section" id="productos">
+    <h3>Productos</h3>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150.png?text=Combo+de+comida" alt="Combo de comida">
+        <h4>Combos de comida</h4>
+        <p>Comida lista para disfrutar, con todo lo necesario.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150.png?text=Art%C3%ADculos+de+aseo" alt="Artículos de aseo">
+        <h4>Artículos de aseo personal</h4>
+        <p>Todo para tu higiene y cuidado personal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section promociones" id="promociones">
+    <h3>Promociones</h3>
+    <p>Descubre nuestras ofertas especiales y ahorra en grande.</p>
+  </section>
+
+  <section class="section" id="nosotros">
+    <h3>Sobre nosotros</h3>
+    <p>Somos Combo Express, una empresa dedicada a ofrecerte las mejores combinaciones de productos de comida y artículos de aseo personal. Nuestra misión es facilitarte la vida, brindándote calidad y buen precio.</p>
+  </section>
+
+  <section class="section" id="contacto">
+    <h3>Contacto</h3>
+    <p>¿Quieres hacer un pedido? Escríbenos directamente:</p>
+    <a href="https://wa.me/1234567890" class="whatsapp" target="_blank">📱 Pide por WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Combo Express. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
